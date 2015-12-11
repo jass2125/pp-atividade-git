@@ -19,9 +19,9 @@ public class Cadastro extends HttpServlet {
         String email = request.getParameter("email");
         String fone = request.getParameter("fone");
         
-        GerenciadorUsuario ger = new GerenciadorUsuario();
+        GerenciadorUsuario gerenciador = new GerenciadorUsuario();
         Usuario usuario = new Usuario(nome, email, fone);
-        ger.add(usuario);
+        gerenciador.add(usuario);
         
         
             
