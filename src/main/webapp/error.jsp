@@ -12,7 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <p>${requestScope.ex}</p>
         <h1>Dados invalidos, retorne e verifique seus dados</h1>
     </body>
 </html>

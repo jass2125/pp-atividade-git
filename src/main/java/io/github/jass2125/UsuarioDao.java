@@ -27,7 +27,7 @@ public class UsuarioDao implements UsuarioDaoIF {
         
     }
     
-    public ResultSet login(String login, String senha) throws SQLException {
+    public boolean login(String login, String senha) throws SQLException {
         String url = "jdbc:derby://localhost:1527/pp";
         String user = "pp";
         String password = "123";
@@ -36,7 +36,7 @@ public class UsuarioDao implements UsuarioDaoIF {
         PreparedStatement ps = connection.prepareStatement(sql);
         ps.setString(1, login);
         ps.setString(2, senha);
-        return ps.executeQuery();
+        return ps.executeQuery().next();
     }
     
     

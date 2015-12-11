@@ -11,5 +11,5 @@ public interface UsuarioDaoIF {
     
     public void add(Usuario usuario) throws SQLException;
     
-    public ResultSet login(String login, String senha) throws SQLException;
+    public boolean login(String login, String senha) throws SQLException;
 }

@@ -19,7 +19,7 @@ public class GerenciadorUsuario {
     }
 
     public boolean login(String login, String senha) throws SQLException {
-        if(dao.login(login, senha) != null) {
+        if(dao.login(login, senha)) {
             return true;
         }
         return false;

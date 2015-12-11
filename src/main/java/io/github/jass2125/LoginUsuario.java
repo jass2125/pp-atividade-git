@@ -19,12 +19,15 @@ public class LoginUsuario extends HttpServlet {
             String login = request.getParameter("login");
             String senha = request.getParameter("senha");
             GerenciadorUsuario gerenciador = new GerenciadorUsuario();
-            gerenciador.login(login, senha);
-            request.getRequestDispatcher("home.jsp").forward(request, resp);
+            if(gerenciador.login(login, senha)){
+                request.getRequestDispatcher("home.jsp").forward(request, resp);
+            }
+            
         }catch(SQLException e){
             request.setAttribute("ex", e);
             request.getRequestDispatcher("error.jsp").forward(request, resp);
         }
+        request.getRequestDispatcher("error.jsp").forward(request, resp);
     }
     
     
