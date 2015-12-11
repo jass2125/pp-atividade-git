@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Dec 11, 2015, 10:41:17 AM
+    Document   : home
+    Created on : Dec 11, 2015, 10:50:02 AM
     Author     : Anderson Souza
 --%>
 
@@ -12,8 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <a href="login.jsp">Clique aqui para realizar o login</a>
-        <br>
-        <a href="cadastro.jsp">Clique aqui para realizar o cadastro</a>
+        <h1>Seja Bem vindo Usuario</h1>
     </body>
 </html>

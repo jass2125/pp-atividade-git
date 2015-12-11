@@ -5,20 +5,30 @@ package io.github.jass2125;
  * @author Anderson Souza
  */
 public class Usuario {
-
     private String nome;
     private String email;
+    private String password;
     private String fone;
 
     public Usuario() {
     }
 
-    public Usuario(String nome, String email, String fone) {
+    public Usuario(String nome, String email, String fone, String password) {
         this.nome = nome;
         this.email = email;
         this.fone = fone;
+        this.password = password;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    
     public String getNome() {
         return nome;
     }

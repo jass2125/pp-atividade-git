@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Dec 11, 2015, 10:41:17 AM
+    Document   : error.jsp
+    Created on : Dec 11, 2015, 10:50:25 AM
     Author     : Anderson Souza
 --%>
 
@@ -12,8 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <a href="login.jsp">Clique aqui para realizar o login</a>
-        <br>
-        <a href="cadastro.jsp">Clique aqui para realizar o cadastro</a>
+        <p>${requestScope.ex}</p>
+        <h1>Dados invalidos, retorne e verifique seus dados</h1>
     </body>
 </html>
