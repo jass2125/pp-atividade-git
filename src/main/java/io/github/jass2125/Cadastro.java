@@ -20,8 +20,8 @@ public class Cadastro extends HttpServlet {
         String fone = request.getParameter("fone");
         
         GerenciadorUsuario ger = new GerenciadorUsuario();
-        
-        ger.add();
+        Usuario usuario = new Usuario(nome, email, fone);
+        ger.add(usuario);
         
         
             
